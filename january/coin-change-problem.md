@@ -3,6 +3,6 @@ Given a set of coins and amount, write an algorithm to find out how many ways ca
 
 ###Example
 Amount = 5  
-coins[] = {1,2,3}  
+coins[ ] = {1,2,3}  
 Ways to make change = 5  
 {1,1,1,1,1} {1,1,1,2} {1,2,2} {1,1,3} {2,3}  
