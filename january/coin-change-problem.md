@@ -1,0 +1,2 @@
+# Coin Change Problem
+**Problem statement** - Given a set of coins and amount, write an algorithm to find out how many ways can we make the change of the amount using the coins given. You may assume that the each coin type is infinitely available.
