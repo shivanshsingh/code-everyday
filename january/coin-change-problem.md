@@ -12,7 +12,7 @@ Ways to make change = 5
 One way to solve this problem is recursion.
 - For every coin, we have an option to include it or exclude it.  
 - And solution would be, no. of ways you get by including a coin + no. of ways you get by excluding that coin.  
-- Here is the code for this solution.
+- Here is the code for this [solution](https://github.com/shivanshsingh/code-everyday/blob/master/january/CoinChangeRecursion.java).
 
 Time complexity of this approach is: **2^n** ,where n is the no. of coins. The way you calculate is something like this - for every coin you have 2 options, either exclude(0) it or include(1) it. So for 2 coins, the combinations are 00 01 10 11, which is 2^2. So for n coins, its 2^n.  
 In this solution, we are repeatedly solving the same sub-problems, multiple times. We can solve this problem in a more efficient way using dynamic programming.  
@@ -29,7 +29,7 @@ In this approach, we will store the solutions to the sub-problems. And instead o
 - Check if the coin value is less than or equal to the amount value. If yes, than we will find the solution by including or excluding the coin. Otherwise, we will find the solution only by excluding it.  
   - **Include coin** - Reduce the amount by coin value and use the sub-problem solution for reduced amount.  
   - **Exclude coin** - Use the solution for the same amount but excluing the coin.  
-- Here is the code for this solution.  
+- Here is the code for this [solution](https://github.com/shivanshsingh/code-everyday/blob/master/january/CoinChangeDP.java).  
 
 ###Solution example
 Amount = 5  
