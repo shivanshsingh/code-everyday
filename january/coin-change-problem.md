@@ -8,7 +8,7 @@ Ways to make change = 5
 {1,1,1,1,1} {1,1,1,2} {1,2,2} {1,1,3} {2,3}  
 
 ###Approach
-**Recursive Solution**  
+####Recursive Solution
 One way to solve this problem is recursion.
 - For every coin, we have an option to include it or exclude it.  
 - And solution would be, no. of ways you get by including a coin + no. of ways you get by excluding that coin.  
@@ -17,7 +17,7 @@ One way to solve this problem is recursion.
 Time complexity of this approach is: **2^n** ,where n is the no. of coins. The way you calculate is something like this - for every coin you have 2 options, either exclude(0) it or include(1) it. So for 2 coins, the combinations are 00 01 10 11, which is 2^2. So for n coins, its 2^n.  
 In this solution, we are repeatedly solving the same sub-problems, multiple times. We can solve this problem in a more efficient way using dynamic programming.  
 
-**Dynamic programming Solution**  
+####Dynamic programming Solution
 In this approach, we will store the solutions to the sub-problems. And instead of solving the same sub-problem again, we just use the stored values.  
 
 **Base case**:  
