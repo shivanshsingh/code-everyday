@@ -11,7 +11,7 @@ Tree =
 |\ \
 4 2 2
 ```
-Result = True
+Result = True  
 Duplicate subtrees are =
 ```
 3
