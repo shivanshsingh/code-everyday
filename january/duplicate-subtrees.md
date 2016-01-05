@@ -25,7 +25,7 @@ We can solve this problem using inOrder tree traversal.
 - Use a list to keep all the seen nodes, so far.
 - While traversing, for every node (i.e. when visiting the node in visit() method), check if a node already exist in the seen list, similar to the current one, i.e. of the same node value.
 - If yes, you found a duplicate node. Compare the left(or right) child of current node, with the left(or right) child of duplicate node. If they have same node values, it means a duplicate edge is found. And hence, the duplicate sub-trees is found. Therefore, return true.
-- Here is the code for the solution.
+- Here is the code for the [solution](https://github.com/shivanshsingh/code-everyday/blob/master/january/DuplicateTree.java).
 
 **Note** - Important thing to note in the code is that, the in-order traversal is a recursive function. The function execution will finish only when all the nodes have been visited, even though the duplicate subtrees are found, as shown in the inOrder() method. But, there is no point in traversing the tree further, if duplicate subtree has already been found. To avoid it, we have implemented a check in inOrderModified() method - if any of the branches(left-subtree, current node or right-subtree) of the in-order traversal algorithm returns true, then we just return it back to the stack.
 
